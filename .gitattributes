@@ -1,0 +1,23 @@
+# Preservar los bytes del manifiesto de distribución en todos los clones.
+* -text
+# Los productos S11/S12 sellan SHA-256 de estos bytes CRLF.
+# Git debe preservarlos al publicar y clonar en cualquier plataforma.
+/assets/quantitative.css -text
+/assets/quantitative.js -text
+/kai/parametros_pt01_v2.json -text
+/kai/politicas_cuantificacion_g05_v1.json -text
+/outputs/g05_s11/4cc61d4696212e9928cc/block_model_s11.csv -text
+/outputs/g05_s11/4cc61d4696212e9928cc/composites_multianalyte_qa.csv -text
+/outputs/g05_s11/4cc61d4696212e9928cc/density_positioned_qa.csv -text
+/outputs/g05_s11/4cc61d4696212e9928cc/sensitivity_75_50.csv -text
+/outputs/g05_s12/c1b396f1482e4ee1d39d/block_model_s12.csv -text
+/outputs/g05_s12/c1b396f1482e4ee1d39d/block_scenario_s12.csv -text
+/outputs/g05_s12/c1b396f1482e4ee1d39d/scenario_s12.csv -text
+/src/missions/__init__.py -text
+/src/missions/estimation.py -text
+/src/missions/g05.py -text
+/src/missions/products.py -text
+/src/missions/scenarios.py -text
+/src/missions/sources.py -text
+/src/missions/viewer.py -text
+/src/missions/volume.py -text

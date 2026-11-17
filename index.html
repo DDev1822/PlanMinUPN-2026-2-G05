@@ -55,7 +55,8 @@
             <span class="pill pill-warm">GRUPO 05 · SANTA ELENA</span>
             <h1 id="proyecto-title">De los sondajes a un<br><em>modelo que podemos leer.</em></h1>
             <p>Construimos un modelo de bloques categórico y preliminar a partir del release académico <strong>DS05 / EXP03</strong>. Aquí veremos qué proviene de observaciones, qué se calculó y dónde aún falta conocimiento.</p>
-            <div class="hero-actions"><a class="button primary" href="#datos">Explorar nuestros datos <span aria-hidden="true">→</span></a><a class="text-link" href="#estado">Ver el estado real ↗</a><a class="text-link" href="#teoria">Estudiar los métodos de estimación ↗</a></div>
+            <div class="hero-actions"><a class="button primary" href="#datos">Explorar nuestros datos <span aria-hidden="true">→</span></a><a class="text-link" href="#estado">Ver el estado real ↗</a><a class="text-link" href="#teoria">Estudiar los métodos de estimación ↗</a><a class="text-link" href="docs/learning/GUIA_ESTUDIANTE_KAI.html">Aprender con Kai ↗</a></div>
+            <p>En PyCharm, selecciona Kai Planeamiento en el chat de Copilot y escribe «quiero empezar». Kai te pedirá un alias pseudónimo, conservará tu progreso y te guiará una actividad a la vez.</p>
           </div>
           <div class="hero-visual hero-drill-visual" aria-label="Vista tridimensional de las 44 trayectorias de sondaje de G05">
             <img class="hero-drill-poster" src="assets/sondajes_3d_g05.png" alt="Perspectiva 3D de los 44 sondajes de Santa Elena, coloreados por campaña">
@@ -79,7 +80,7 @@
           <div role="listitem"><b>04</b><span>Bloques</span><small>50 × 50 × 10 m</small></div>
           <div role="listitem"><b>05</b><span>Topografía y códigos</span><small>Diagnóstico</small></div>
         </div>
-        <div class="notice"><strong>Momento E1.</strong> Estas pantallas conservan el corte del modelo preliminar usado por la ficha de 21 observaciones. En ese corte no hay leyes, densidad ni tonelaje estimados por bloque. Después del cierre E1 y la teoría, abre S11 y S12 para consultar sus generaciones cuantitativas.</div>
+        <div class="notice"><strong>Momento E1.</strong> Estas pantallas conservan el corte del modelo preliminar usado por la ficha de 21 datos documentales verificados. En ese corte no hay leyes, densidad ni tonelaje estimados por bloque. Después del cierre E1 y la teoría, abre S11 y S12 para consultar sus generaciones cuantitativas.</div>
       </section>
 
       <section id="datos" class="screen" aria-labelledby="datos-title" hidden>
@@ -139,7 +140,7 @@
       </section>
 
       <section id="estado" class="screen" aria-labelledby="estado-title" hidden>
-        <div class="notice"><strong>Corte E1 preservado.</strong> Este estado describe el modelo preliminar y respalda la ficha de 21 observaciones. Consulta los resultados posteriores en S11 y S12.</div>
+        <div class="notice"><strong>Corte E1 preservado.</strong> Este estado describe el modelo preliminar y respalda la ficha de 21 datos documentales verificados. Consulta los resultados posteriores en S11 y S12.</div>
         <div class="eyebrow">07 / ESTADO ACTUAL</div>
         <h1 id="estado-title">Lo construido.<br><em>Lo que todavía falta.</em></h1>
         <p class="lead">El modelo está disponible y tuvo validación computacional y observacional dentro de su alcance T2. La revisión geológica profesional, los metadatos espaciales y las propiedades cuantitativas requieren trabajo posterior.</p>
@@ -162,7 +163,7 @@
         <p class="lead">Primero compara los métodos en la teoría. Después observa dónde IDW² pudo estimar con respaldo y dónde conservó faltantes. El volumen se calcula bajo la topografía; las toneladas requieren densidad sustentada.</p>
         <div id="s11-status" class="notice" role="status">Comprobando la generación publicada…</div>
         <div id="s11-metrics" class="metric-strip"></div>
-        <div id="s11-files" class="theory-actions"></div>
+        <div class="theory-actions"><a class="button primary" href="docs/learning/RESULTADOS_G05.html#s11">Explorar resultados y bloques S11</a><span id="s11-files"></span></div>
         <button class="button primary" data-mission-load="S11">Cargar visor S11 aquí</button>
         <div class="theory-frame" style="margin-top:20px"><iframe data-mission-frame="S11" title="Modelo cuantitativo S11 G05 con leyes, densidad, volumen y soporte" style="height:1100px" loading="lazy"></iframe></div>
         <div class="notice">El alumno observa un valor, lo explica a Kai y Kai lo verifica antes de registrarlo. La ficha E1 permanece separada de la nueva ficha de aplicación S11/S12.</div>
@@ -173,12 +174,12 @@
         <p class="lead">Partimos del S11 validado. Un bloque con ley suficiente todavía necesita geología, volumen y densidad respaldados para ser candidato. La relación con A/B queda en una tabla por bloque.</p>
         <div id="s12-status" class="notice" role="status">Comprobando la generación publicada…</div>
         <div id="s12-metrics" class="metric-strip"></div>
-        <div id="s12-files" class="theory-actions"></div>
+        <div class="theory-actions"><a class="button primary" href="docs/learning/RESULTADOS_G05.html#s12">Explorar resultados y bloques S12</a><span id="s12-files"></span></div>
         <button class="button primary" data-mission-load="S12">Cargar visor S12 aquí</button>
         <div class="theory-frame" style="margin-top:20px"><iframe data-mission-frame="S12" title="Candidatos por bloque y comparación de escenarios A y B G05" style="height:1200px" loading="lazy"></iframe></div>
         <div class="notice"><strong>Vínculo G05-ALLOC-01.</strong> Cada clase participa proporcionalmente a su tonelaje, hasta las metas del período y sin superar el inventario. Es una asignación fraccionaria para comparar capacidad y costos. El orden de extracción, acceso y estabilidad quedan sin modelar.</div>
       </section>
-      <footer><img src="assets/L1.png" alt="Símbolo DrillStone"><span>PLANMINUPN 2.0 · PILOTO G05 · SANTA ELENA</span><span>Fuente: commit <code>7825c211</code> · E1 → S11 → S12</span></footer>
+      <footer><img src="assets/L1.png" alt="Símbolo DrillStone"><span>PLANMINUPN 2.0 · PILOTO G05 · SANTA ELENA</span><span>E1 → S11 → S12 · modelos académicos</span></footer>
     </main>
   </div>
 </body>

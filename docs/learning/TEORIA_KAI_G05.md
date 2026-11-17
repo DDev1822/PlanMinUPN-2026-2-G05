@@ -10,7 +10,7 @@ Contenido R6, ruta `KAI-G05-TEORIA`, versión 2. Las preguntas son una referenci
 | S11 | Comparar métodos y continuidad espacial → reconocer fuentes y soporte → estimar leyes con la decisión prevista → incorporar densidad → interpretar tonelaje → revisar sensibilidad y visualización | Modelo didáctico de recursos, con propiedades respaldadas y faltantes visibles |
 | S12 | Material elegible → capacidades → flota → costos → restricciones y horizontes → escenarios A/B | Modelo preliminar didáctico de reservas, como escenario conceptual de material candidato |
 
-Los nombres de los productos expresan la progresión académica solicitada. No equivalen a declaraciones profesionales de recursos o reservas. El aprendizaje puede continuar con ejemplos cuando falta un resultado del grupo; el producto cuantitativo del grupo permanece pendiente hasta disponer de sus datos y comprobaciones.
+Los nombres de los productos expresan la progresión académica solicitada. No equivalen a declaraciones profesionales de recursos o reservas. G05 dispone de generaciones S11 y S12 validadas; Kai comprueba su vigencia antes de usar una cifra y distingue esos resultados de los ejemplos teóricos.
 
 ## Cómo conduce Kai cada tema
 

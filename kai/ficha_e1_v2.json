@@ -1,0 +1,123 @@
+{
+  "schema": "planminupn-g05-e1-context/2",
+  "ficha_id": "G05-FICHA-INDIVIDUAL-V2",
+  "version": 2,
+  "source_catalog": "kai/ficha_individual_g05.json",
+  "source_catalog_sha256": "3008bae7f53bee6c55758a5184db487e58a773d8e021ed9fc518a63f3c7f18f0",
+  "source_summary_sha256": "5ba295de04f8528debe0cca66b75adb61c373fa4cff100d0b11ac850d167aad5",
+  "field_provenance": "SYSTEM_VERIFIED",
+  "student_evidence": [
+    "E1.01",
+    "E1.02",
+    "E1.03",
+    "E1.04",
+    "E1.05",
+    "E1.06",
+    "E1.07",
+    "E1.08"
+  ],
+  "fields": [
+    {
+      "id": "PROYECTO.NOMBRE",
+      "role": "METADATA"
+    },
+    {
+      "id": "PROYECTO.DATASET",
+      "role": "METADATA"
+    },
+    {
+      "id": "PROYECTO.RELEASE",
+      "role": "METADATA"
+    },
+    {
+      "id": "DATOS.SONDAJES",
+      "role": "OBSERVABLE",
+      "activity": "E1.01"
+    },
+    {
+      "id": "DATOS.SURVEY",
+      "role": "OBSERVABLE",
+      "activity": "E1.04"
+    },
+    {
+      "id": "DATOS.ENSAYES",
+      "role": "OBSERVABLE",
+      "activity": "E1.05"
+    },
+    {
+      "id": "DATOS.LITOLOGIA",
+      "role": "OBSERVABLE",
+      "activity": "E1.02"
+    },
+    {
+      "id": "DATOS.DENSIDAD",
+      "role": "OBSERVABLE",
+      "activity": "E1.05"
+    },
+    {
+      "id": "COMP.OBJETIVO",
+      "role": "OBSERVABLE",
+      "activity": "E1.06"
+    },
+    {
+      "id": "COMP.TOTAL",
+      "role": "OBSERVABLE",
+      "activity": "E1.06"
+    },
+    {
+      "id": "COMP.COMPLETOS",
+      "role": "OBSERVABLE",
+      "activity": "E1.06"
+    },
+    {
+      "id": "COMP.RESIDUOS",
+      "role": "OBSERVABLE",
+      "activity": "E1.06"
+    },
+    {
+      "id": "COMP.CONTACTO",
+      "role": "OBSERVABLE",
+      "activity": "E1.06"
+    },
+    {
+      "id": "BLOQUES.TAMANO",
+      "role": "OBSERVABLE",
+      "activity": "E1.07"
+    },
+    {
+      "id": "BLOQUES.TOTAL",
+      "role": "OBSERVABLE",
+      "activity": "E1.07"
+    },
+    {
+      "id": "BLOQUES.ROCK",
+      "role": "OBSERVABLE",
+      "activity": "E1.08"
+    },
+    {
+      "id": "BLOQUES.AIR",
+      "role": "OBSERVABLE",
+      "activity": "E1.08"
+    },
+    {
+      "id": "BLOQUES.PARTIAL",
+      "role": "OBSERVABLE",
+      "activity": "E1.08"
+    },
+    {
+      "id": "BLOQUES.ASIGNADOS",
+      "role": "OBSERVABLE",
+      "activity": "E1.08"
+    },
+    {
+      "id": "BLOQUES.SIN_ASIGNAR",
+      "role": "OBSERVABLE",
+      "activity": "E1.08"
+    },
+    {
+      "id": "ESTADO.PROPIEDADES",
+      "role": "OBSERVABLE",
+      "activity": "E1.08"
+    }
+  ]
+}

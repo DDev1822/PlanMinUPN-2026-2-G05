@@ -80,14 +80,14 @@ class RecorridoTests(unittest.TestCase):
         self.assertEqual(self.call()['objetivo_siguiente'],'INICIAR_S12')
         self.call('iniciar_etapa',etapa='S12');self.assertEqual(self.call()['base_s12'],'G05_S11_VALIDADO')
         self.complete_stage('S12');self.assertEqual(self.call()['objetivo_siguiente'],'COMPLETAR_APLICACION_S12')
-        self.fill_application('S12');self.assertEqual(self.call()['objetivo_siguiente'],'COMPLETAR_FICHA_E1')
-        # Reusar el flujo original de E1, con el corte preliminar preservado.
-        catalog,summary=control.e1._fuentes()
-        for f in catalog['campos']:
-            value=control.e1._source_value(summary,f)
-            proposed=' x '.join(map(str,value)) if f['tipo']=='dimensiones' else 'No' if f['tipo']=='booleano_no' else value
-            response=self.call('responder_ficha_e1',campo=f['id'],respuesta_literal=f'Leo {proposed}',valor_propuesto=proposed)
-            self.assertTrue(response['validado'])
+        self.fill_application('S12');self.assertEqual(self.call()['objetivo_siguiente'],'ENTREGABLES_ACADEMICOS_LISTOS')
+        ficha=self.call('estado_ficha_e1')
+        self.assertEqual(ficha['verified_fields'],21)
+        self.assertEqual(ficha['competencies_demonstrated'],8)
+        self.assertTrue(ficha['complete'])
+        self.assertFalse((self.data/self.alias/'ficha_individual.sqlite').exists())
+        with self.assertRaises(ValueError):
+            self.call('responder_ficha_e1',campo='PROYECTO.NOMBRE',respuesta_literal='Santa Elena',valor_propuesto='Santa Elena')
         self.assertTrue(self.call()['entrega_final_lista'])
         delivery=self.call('entregar_individual');self.assertTrue(Path(delivery['zip']).is_file())
         with zipfile.ZipFile(delivery['zip']) as z:

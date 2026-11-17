@@ -20,5 +20,6 @@
   "productos_grupales_verificados": null,
   "controlador_activo": "kai/recorrido_g05.py",
   "estado_vigente_productos": "outputs/g05_products.json comprobado dinámicamente por el controlador",
-  "verificacion_productos": "DINAMICA_POR_HASHES; un booleano estático no acredita una ejecución"
+  "verificacion_productos": "DINAMICA_POR_HASHES; un booleano estático no acredita una ejecución",
+  "ficha_e1": "kai/ficha_individual_v2.py"
 }
